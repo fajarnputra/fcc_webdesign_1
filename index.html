@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us to improve the platform</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+      <label id="name-label">Enter Your Name: <input id="name" type="text" required placeholder="Name" /></label>
+      <label id="email-label">Enter Your Email: <input id="email" type="email" required placeholder="Email" /></label>
+      <label id="number-label">Enter A Number: <input id="number" type="number" min="10" max="100"  required placeholder="Between 10 and 100" /></label>
+    </fieldset>
+
+    <fieldset>
+      <label>How did you hear about us?
+          <select id="dropdown">
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Type of Expertise:</label>
+        <label><input id="quantitative" type="radio" name="method" class="inline" value="1" /> Quantitative Researcher</label>
+        <label><input id="qualitative" type="radio" name="method" class="inline" value="2" /> Qualitative Researcher</label>
+    </fieldset>
+
+    <fieldset>
+      <label>Choose Relevant Tools That You Mastered:</label>
+      <label><input id="terms-and-conditions" type="checkbox" class="inline" value="1"/>Python</label>
+      <label><input id="terms-and-conditions" type="checkbox" class="inline"  value="2"/>R Programming</label>
+      <label><input id="terms-and-conditions" type="checkbox" class="inline"  value="3"/>Stata</label>
+      <label><input id="terms-and-conditions" type="checkbox" class="inline"  value="4"/>Microsoft Excel</label>
+    </fieldset>
+
+    <fieldset>
+      <label>Additional Comments:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="The form already works properly..."></textarea>
+      </label>
+    </fieldset>
+
+    <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
